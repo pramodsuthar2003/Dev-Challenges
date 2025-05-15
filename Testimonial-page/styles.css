@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: "Sora", sans-serif;
+    background-color: #FAFAF9;
+}
+
+.card{
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.left{
+    width: 50%;
+    line-height: 4rem;
+}
+
+.star-icon{
+    background-color: #F5C044;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.left h1{
+    font-size: 2.25rem;
+    color: #18181B;
+}
+
+.left p{
+    font-size: 1.25rem;
+    color: #52525A;
+    line-height: 2rem;
+}
+
+.checklist{
+    list-style-type: none;
+    padding: 0;
+    color: #52525A;
+    font-size: 0.875rem;
+}
+
+.checklist li{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    line-height: 2rem;
+}
+
+.checklist img{
+    margin-right: 1rem;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 2.2rem;
+}
+
+.right .google{
+    margin-left: auto;
+}
+
+.google{
+    background-color: #FFFFFF;
+    width: 22rem;
+    height: 10rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.google h2{
+    color: #18181B;
+}
+
+.google p{
+    color: #52525A;
+    line-height: 1.8rem;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stars{
+    display: flex;
+    grid-area: 0.5rem;
+}
+
+.meta{
+    background-color: #FFFFFF;
+    width: 22rem;
+    height: 10rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.meta h2{
+    color: #18181B;
+}
+
+
+.meta p{
+    color: #52525A;
+    line-height: 1.8rem;
+}
+
+@media (max-width: 479px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 1rem;
+  }
+  .right {
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+  }
+
+  .right .google {
+    margin-left: 0;
+  }
+}
